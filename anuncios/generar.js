@@ -4,9 +4,6 @@
 const fs = require('fs');
 const path = require('path');
 
-// Cambia aquí los precios y se actualizan en todos los anuncios
-const PRECIO = { juego: 'S/ 24.90', kit: 'S/ 29.90', planner: 'S/ 29.90' };
-
 const OUT = path.join(__dirname, 'png');
 const HTML = path.join(__dirname, 'html');
 fs.mkdirSync(OUT, { recursive: true });
@@ -68,7 +65,7 @@ const juego = [
   </div>
   <div style="font-size:31px;font-weight:700;text-align:center;margin-top:26px;line-height:1.35">Una fiesta en una casona de Barranco. 5 sospechosos.<br>Todos mienten en algo. ¿Quién mató a Rodrigo Salas?</div>
   <div class="spacer"></div>
-  ${cta('Quiero resolver el caso', '· ' + PRECIO.juego)}
+  ${cta('Quiero resolver el caso', '→ WhatsApp')}
   ${pay('#f3ead7')}
 </div>`,
   },
@@ -91,7 +88,7 @@ const juego = [
   </div>
   <div class="spacer"></div>
   <div class="facts" style="justify-content:center;margin-bottom:26px"><span>👥 1 a 6 detectives</span><span>⏱ 90–120 min</span><span>🔞 +16 años</span></div>
-  ${cta('Pedir nuestro caso', '· ' + PRECIO.juego)}
+  ${cta('Pedir nuestro caso', '→ WhatsApp')}
   ${pay('#f3ead7')}
 </div>`,
   },
@@ -112,7 +109,7 @@ const juego = [
     <ul class="check" style="font-size:27px;font-weight:700"><li>Hoja de acusación</li><li>Pistas de ayuda si se traban</li><li>Solución en archivo aparte</li></ul>
   </div>
   <div class="spacer"></div>
-  ${cta('Lo quiero', '· ' + PRECIO.juego)}
+  ${cta('Lo quiero', '→ WhatsApp')}
   ${pay('#f3ead7', 'Se imprime a color o en blanco y negro · 1 a 6 detectives')}
 </div>`,
   },
@@ -128,9 +125,9 @@ const juego = [
         <div style="background:#075e54;color:#fff;padding:24px 22px;font-weight:700;font-size:22px">🔎 Expediente Barranco</div>
         <div style="padding:16px;display:flex;flex-direction:column;gap:12px;font-size:19px;color:#111">
           <div style="align-self:flex-end;background:#dcf8c6;padding:11px 15px;border-radius:14px;max-width:85%">Hola! Quiero el caso para jugar hoy 🙌</div>
-          <div style="background:#fff;padding:11px 15px;border-radius:14px;max-width:85%">¡Hola! Son ${PRECIO.juego}. Te paso el Yape 👇</div>
+          <div style="background:#fff;padding:11px 15px;border-radius:14px;max-width:85%">¡Hola, detective! Te paso el Yape 👇</div>
           <div style="align-self:flex-end;background:#dcf8c6;padding:11px 15px;border-radius:14px;max-width:85%">Listo, ya yapeé ✅</div>
-          <div style="background:#fff;padding:11px 15px;border-radius:14px;max-width:85%">¡Gracias, detective! Aquí tu expediente 🕵️</div>
+          <div style="background:#fff;padding:11px 15px;border-radius:14px;max-width:85%">¡Gracias! Aquí tu expediente 🕵️</div>
           <div style="background:#fff;padding:8px;border-radius:14px;width:250px">
             ${pg('juego-01.png', 234, 150, { top: 0.32, style: 'box-shadow:none;border-radius:8px' })}
             <div style="display:flex;gap:8px;align-items:center;margin-top:8px"><span style="background:#e05a52;color:#fff;font-weight:900;padding:6px 7px;border-radius:5px;font-size:14px">PDF</span><span style="font-weight:700;font-size:16px">Expediente_Barranco.pdf</span></div>
@@ -183,7 +180,7 @@ const kit = [
   </div>
   <div class="spacer"></div>
   <div style="text-align:center;font-family:'Playfair Display';font-style:italic;font-size:40px;margin-bottom:26px">Juego, no tarea. Y con lo que hay en la cocina.</div>
-  ${cta('Quiero el kit', '· ' + PRECIO.kit)}
+  ${cta('Quiero el kit', '→ WhatsApp')}
   ${pay('#1f4e46')}
 </div>`,
   },
@@ -202,7 +199,7 @@ const kit = [
   </div>
   <div style="text-align:center;font-size:28px;font-weight:700;margin-top:26px">Incluye registro semanal para anotar qué le gusta y qué le cuesta,<br>y llevarlo a su profesor o terapeuta.</div>
   <div class="spacer"></div>
-  ${cta('Quiero el plan', '· ' + PRECIO.kit)}
+  ${cta('Quiero el plan', '→ WhatsApp')}
   <div class="disc">Material de juego y estimulación. No reemplaza la evaluación ni la terapia de un profesional.</div>
 </div>`,
   },
@@ -232,7 +229,7 @@ const kit = [
     🎁 <span style="color:#e07a5f">+3 bonos:</span> registro semanal · plan de 4 semanas · kit de calma para la refri
   </div>
   <div class="spacer"></div>
-  ${cta('Pedir el kit', '· ' + PRECIO.kit)}
+  ${cta('Pedir el kit', '→ WhatsApp')}
   ${pay('#1f4e46', 'Para mamás, papás, docentes y terapeutas · PDF listo para imprimir')}
 </div>`,
   },
@@ -250,7 +247,7 @@ const kit = [
   <div style="text-align:center;font-size:28px;font-weight:700;margin-top:30px;line-height:1.4">Sopla la vela · Abrazo de oso · Modo tortuga<br>Agua fría · Empuja la pared · Tararea</div>
   <div style="text-align:center;font-size:26px;font-weight:700;margin-top:18px;opacity:.85">+ 48 actividades sensoriales y motoras para niños de 2 a 8 años</div>
   <div class="spacer"></div>
-  ${cta('Quiero el kit', '· ' + PRECIO.kit)}
+  ${cta('Quiero el kit', '→ WhatsApp')}
   <div class="disc">Material de juego y estimulación. No reemplaza la evaluación ni la terapia de un profesional.</div>
 </div>`,
   },
@@ -284,7 +281,7 @@ const planner = [
   </div>
   <div style="text-align:center;font-family:'Playfair Display';font-style:italic;font-size:42px;margin-top:10px">Todo tu matrimonio organizado en un solo lugar.</div>
   <div class="spacer"></div>
-  ${cta('Quiero mi planner', '· ' + PRECIO.planner)}
+  ${cta('Quiero mi planner', '→ WhatsApp')}
   ${pay('#7a6a62')}
 </div>`,
   },
@@ -305,7 +302,7 @@ const planner = [
   </div>
   <div class="spacer"></div>
   <div style="text-align:center;font-size:28px;font-weight:700;margin-bottom:26px">Checklist · Presupuesto · Trámites · Invitados · Proveedores · Mesas</div>
-  ${cta('Quiero mi planner', '· ' + PRECIO.planner)}
+  ${cta('Quiero mi planner', '→ WhatsApp')}
   ${pay('#7a6a62')}
 </div>`,
   },
@@ -321,7 +318,7 @@ const planner = [
   </div>
   <div style="text-align:center;font-size:28px;font-weight:700;margin-top:52px">Marca, avanza y deja de preguntarte “¿me estoy olvidando de algo?”</div>
   <div class="spacer"></div>
-  ${cta('Quiero mi checklist', '· ' + PRECIO.planner)}
+  ${cta('Quiero mi checklist', '→ WhatsApp')}
   ${pay('#7a6a62', 'PDF imprimible · Recíbelo al instante por WhatsApp')}
 </div>`,
   },
@@ -338,7 +335,7 @@ const planner = [
   </div>
   <div style="text-align:center;font-size:28px;font-weight:700;margin-top:30px">Presupuesto · costo real · adelanto · saldo · fecha de pago<br><span style="opacity:.8">y un 6 % reservado para imprevistos</span></div>
   <div class="spacer"></div>
-  ${cta('Quiero mi planner', '· ' + PRECIO.planner)}
+  ${cta('Quiero mi planner', '→ WhatsApp')}
   ${pay('#e9d8cc')}
 </div>`,
   },

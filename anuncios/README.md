@@ -5,11 +5,11 @@ Pensados para **tráfico caliente**: personas que ya interactuaron con la págin
 
 - `png/`: imágenes listas para subir
 - `html/`: fuente de cada imagen
-- `generar.js`: vuelve a generar todo. Los **precios** se cambian en una sola línea arriba (`PRECIO`).
+- `generar.js`: vuelve a generar todo.
 - `producto/`: páginas de los PDF convertidas a imagen. **No se sube al repo** (está en `.gitignore`) para no publicar tu producto. Para regenerar:
   `pdftoppm -png -r 150 Expediente_Barranco_JUEGO.pdf producto/juego` (y lo mismo con `kit` y `planner`), luego `NODE_PATH=$(npm root -g) node generar.js`
 
-> Los precios (S/ 24.90 juego, S/ 29.90 kit y planner) son una propuesta. Cámbialos en `PRECIO` si vas a cobrar otro monto.
+> Las imágenes **no muestran precio**: el precio se da en la conversación de WhatsApp.
 
 **Cuidado con los spoilers del juego:** los anuncios solo muestran la portada, "El caso", "Los sospechosos" y las pruebas 01–02. Las pruebas 03, 05, 06, 08 y 09 y las pistas de ayuda delatan al culpable, así que no las uses en anuncios ni en historias.
 
@@ -24,7 +24,7 @@ Pensados para **tráfico caliente**: personas que ya interactuaron con la págin
 | `juego-3-que-incluye.png` | Qué incluye (páginas reales) | Esto es lo que recibes: el caso con los datos clave de la noche, 5 sospechosos con su declaración, 12 pruebas para recortar (informes, chats, registros, recibos…), la hoja de acusación, pistas de ayuda por si se traban y la solución en un archivo aparte, para que nadie la vea antes de tiempo. Se imprime a color o en blanco y negro. | El expediente completo |
 | `juego-4-como-funciona.png` | Objeción: cómo lo recibo | ¿Lo quieres para hoy? 1) Nos escribes. 2) Yapeas o plineas. 3) En minutos te llega el expediente en PDF y la solución en otro archivo. Imprimes, recortas las pruebas y empiezan. Sirve para una cita en pareja, una reunión con amigos (de 1 a 6 detectives) o un cumpleaños. | Lo pides hoy, lo juegas hoy |
 
-Extra para el copy: un escape room para 4 personas puede salir S/ 200 o más, con taxi incluido; este caso cuesta S/ 24.90 para todo el grupo. Úsalo como segunda línea en cualquiera de los 4 anuncios.
+Extra para el copy: un escape room para 4 personas puede salir S/ 200 o más, con taxi incluido, y este caso lo juega todo el grupo en casa. Úsalo como segunda línea en cualquiera de los 4 anuncios.
 
 ## Producto 2 — Juega y Avanza (kit de actividades)
 
