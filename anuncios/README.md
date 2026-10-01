@@ -1,71 +1,62 @@
 # Anuncios de testeo — Perú, venta low ticket por WhatsApp
 
-12 anuncios de imagen (3 productos × 4 ángulos) en 1080×1350 (4:5, feed de FB/IG).
-Pensados para **tráfico caliente**: personas que ya interactuaron con la página o el IG, que vieron videos, que escribieron al WhatsApp o que visitaron la landing.
-Por eso van directo a la oferta, al precio y a resolver objeciones, sin "educar" desde cero.
+12 anuncios de imagen (3 productos × 4 ángulos) en 1080×1350 (4:5, feed de FB/IG), hechos con las **páginas reales** de cada PDF.
+Pensados para **tráfico caliente**: personas que ya interactuaron con la página o el IG, que vieron videos, que escribieron al WhatsApp o que visitaron la landing. Por eso van directo a la oferta, al precio y a resolver objeciones.
 
 - `png/`: imágenes listas para subir
-- `html/`: fuente editable de cada imagen
-- `generar.js`: vuelve a generar todo (`NODE_PATH=$(npm root -g) node generar.js`)
+- `html/`: fuente de cada imagen
+- `generar.js`: vuelve a generar todo. Los **precios** se cambian en una sola línea arriba (`PRECIO`).
+- `producto/`: páginas de los PDF convertidas a imagen. **No se sube al repo** (está en `.gitignore`) para no publicar tu producto. Para regenerar:
+  `pdftoppm -png -r 150 Expediente_Barranco_JUEGO.pdf producto/juego` (y lo mismo con `kit` y `planner`), luego `NODE_PATH=$(npm root -g) node generar.js`
 
-> Los nombres de producto, los precios (S/ 24.90 y S/ 29.90) y el contenido del kit son **propuestas**.
-> Ajústalos al producto que realmente entregues antes de publicar. No prometas en el anuncio nada que el PDF no tenga.
+> Los precios (S/ 24.90 juego, S/ 29.90 kit y planner) son una propuesta. Cámbialos en `PRECIO` si vas a cobrar otro monto.
 
----
-
-## Por qué estos 3 (y por qué no los otros 2)
-
-| # | Producto | Decisión | Motivo |
-|---|---|---|---|
-| 4 | Juego de misterio imprimible | ✅ **Testear** | Es la validación más fuerte: Murder in Prague lleva ~480 días con anuncios activos y vende **directo al consumidor**. En español solo compite Código Enigma. Es fácil de explicar en una imagen y funciona como regalo, plan en pareja o reunión. |
-| 5 | Kit de terapia infantil (TEA / terapia ocupacional) | ✅ **Testear** | OT Toolkit tiene 40 anuncios activos y ABA Tools ya lo vende en varios idiomas. Es un dolor fuerte con dos públicos (padres y terapeutas) y en español casi no hay kits digitales. **Riesgo:** ABA Tools podría lanzar la versión en español, así que conviene entrar pronto. |
-| 2 | Planner digital de bodas | ✅ **Testear** | No hay ningún anuncio de plantillas en español. El dolor (abrumada, presupuesto) se entiende rápido y Bliss & Bone lleva ~177 días con anuncios. El público es más pequeño, pero muy fácil de segmentar (personas comprometidas). |
-| 1 | Junk journal | ❌ Descartar por ahora | Jessa vende un **curso**, no el junk journal. Su anuncio valida el nicho, no que el producto se venda al consumidor final. |
-| 3 | Cuaderno de acuarela | ❌ Descartar por ahora | Emily Lex vende cuadernos **físicos**. La versión digital no está validada. |
-
-**Orden sugerido de inversión:** 1) Misterio, 2) Terapia, 3) Bodas.
+**Cuidado con los spoilers del juego:** los anuncios solo muestran la portada, "El caso", "Los sospechosos" y las pruebas 01–02. Las pruebas 03, 05, 06, 08 y 09 y las pistas de ayuda delatan al culpable, así que no las uses en anuncios ni en historias.
 
 ---
 
-## Producto 1 — Noche de Misterio en Casa (S/ 24.90)
+## Producto 1 — Expediente Barranco (juego de misterio)
 
 | Archivo | Ángulo | Texto principal (copy) | Título |
 |---|---|---|---|
-| `misterio-1-precio.png` | Comparación de precio | Un escape room para 4 te sale más de S/ 200 entre entradas y taxi. Este caso lo juegan todos en tu sala por S/ 24.90. Lo imprimes, sirves algo rico y empieza la investigación 🔎 Escríbenos y te lo mandamos al toque. | Escape room en casa por S/ 24.90 |
-| `misterio-2-pareja.png` | Plan de pareja (adaptación del gancho de Murder in Prague) | ¿El bebé por fin se durmió? 👶💤 Esta noche no hay Netflix: hay un asesinato que resolver. 5 sospechosos, 12 pistas y 2 horas para descubrir quién fue. Sin niñera, sin tráfico y sin gastar en salir. | Su cita de hoy: resolver un crimen |
-| `misterio-3-incluye.png` | Qué incluye (demostración) | Esto es todo lo que recibes 🗂️ La historia del crimen, las fichas de los sospechosos, 12 pistas (cartas, fotos y documentos), una hoja de detective por jugador y la solución en un sobre que dice "no abrir". PDF en A4, para 2 a 6 jugadores. | Todo el caso listo para imprimir |
-| `misterio-4-como-funciona.png` | Objeción: ¿cómo lo recibo? | ¿Lo quieres para hoy? Lo tienes hoy. 1) Nos escribes. 2) Yapeas o plineas. 3) Te llega el PDF en minutos. Sin envíos ni esperas. Ideal para cumpleaños, reuniones o una cita en casa. | Lo pides hoy, lo juegas hoy |
+| `juego-1-el-caso.png` | Gancho del caso: curiosidad y escenario limeño | La Galería Salas de Barranco celebraba 25 años. A las 11:10 p. m., Rodrigo Salas apareció muerto en su oficina, junto a un pisco sour a medio tomar. La familia dice que fue un infarto. La necropsia dice cianuro. 5 sospechosos, 12 pruebas y todos mienten en algo. ¿Te animas a resolverlo esta noche? 🔎 | ¿Quién mató a Rodrigo Salas? |
+| `juego-2-cita-en-casa.png` | Plan de pareja / cita en casa | Plan para este sábado: pisco sour, canchita y un asesinato que resolver 🍸🕵️ Expediente Barranco tiene un modo pareja: son compañeros detectives con 90 minutos en el reloj. Sin niñera, sin tráfico y sin cuenta de restaurante. | La cita en casa que no es Netflix |
+| `juego-3-que-incluye.png` | Qué incluye (páginas reales) | Esto es lo que recibes: el caso con los datos clave de la noche, 5 sospechosos con su declaración, 12 pruebas para recortar (informes, chats, registros, recibos…), la hoja de acusación, pistas de ayuda por si se traban y la solución en un archivo aparte, para que nadie la vea antes de tiempo. Se imprime a color o en blanco y negro. | El expediente completo |
+| `juego-4-como-funciona.png` | Objeción: cómo lo recibo | ¿Lo quieres para hoy? 1) Nos escribes. 2) Yapeas o plineas. 3) En minutos te llega el expediente en PDF y la solución en otro archivo. Imprimes, recortas las pruebas y empiezan. Sirve para una cita en pareja, una reunión con amigos (de 1 a 6 detectives) o un cumpleaños. | Lo pides hoy, lo juegas hoy |
 
-## Producto 2 — Planner Digital de Bodas (S/ 29.90)
+Extra para el copy: un escape room para 4 personas puede salir S/ 200 o más, con taxi incluido; este caso cuesta S/ 24.90 para todo el grupo. Úsalo como segunda línea en cualquiera de los 4 anuncios.
 
-| Archivo | Ángulo | Texto principal (copy) | Título |
-|---|---|---|---|
-| `bodas-1-abrumada.png` | Dolor: sentirse abrumada (adaptación del gancho de Bliss & Bone) | Si estás organizando tu boda y tienes notas en 4 chats, cotizaciones sueltas y ya no sabes cuánto llevas gastado… para un momento. Con este planner tienes todo en un solo lugar y sabes qué toca cada mes. Tu boda es para disfrutarla, no para sufrirla 💍 | Organiza tu boda sin estrés |
-| `bodas-2-precio.png` | Comparación de precio | Una wedding planner puede costar miles de soles. Este planner te da la misma estructura por S/ 29.90, con pago único: checklist mes a mes, presupuesto que se calcula solo y lista de invitados y proveedores. | Organiza como una profesional |
-| `bodas-3-checklist.png` | Demostración (checklist) | ¿No sabes por dónde empezar? El planner te dice qué hacer cada mes, desde 12 meses antes hasta el gran día. También incluye presupuesto, invitados, proveedores, distribución de mesas y el cronograma del día. Funciona en Google Sheets desde el celular y en PDF. | Qué hacer cada mes hasta tu boda |
-| `bodas-4-presupuesto.png` | Miedo a gastar de más | Pregunta incómoda: ¿sabes cuánto llevas gastado en tu boda? 😬 Los "gastitos" suman rápido. El planner compara lo que presupuestaste con lo que realmente pagaste y te avisa antes de que te pases. | Que tu presupuesto no se te escape |
-
-Segmentación sugerida si luego pasas a tráfico frío: estado civil "comprometido/a" y personas comprometidas en los últimos 6 meses.
-
-## Producto 3 — Kit Digital de Actividades Terapéuticas (S/ 29.90)
+## Producto 2 — Juega y Avanza (kit de actividades)
 
 | Archivo | Ángulo | Texto principal (copy) | Título |
 |---|---|---|---|
-| `terapia-1-terapeutas.png` | Terapeutas: ahorro de tiempo (adaptación del gancho de OT Toolkit) | ¿Cuántas horas de tu domingo se van buscando actividades y armando fichas para tus sesiones? Este kit reúne más de 300 actividades listas para imprimir, ordenadas por área y por edad. Abres la carpeta, eliges e imprimes. | +300 actividades para tus sesiones |
-| `terapia-2-en-casa.png` | Padres: reforzar en casa | La terapia es una hora a la semana, pero el resto de días también cuentan. Son actividades cortas de 10 a 15 minutos, con instrucciones simples y materiales que ya tienes en casa. Llévalas a tu terapeuta y trabajen en equipo 🧩 | Actividades para reforzar en casa |
-| `terapia-3-incluye.png` | Qué incluye (áreas) | Motricidad fina, lenguaje, emociones, rutinas visuales, atención y juego sensorial, todo en un solo kit. Más de 300 fichas en PDF para imprimir las veces que quieras. | Todo en un solo kit |
-| `terapia-4-rutinas.png` | Beneficio concreto: rutinas visuales | Cuando puede ver lo que viene, el día fluye mejor. Pictogramas y rutinas de mañana, noche, baño y comida, tableros de "primero / después" y tarjetas de emociones. Listos para imprimir, recortar y pegar. | Rutinas visuales listas para imprimir |
+| `kit-1-materiales-caseros.png` | Sin gastar: materiales caseros | Ganchos de ropa, menestras, cinta masking, una manta… Con eso tienes 48 actividades sensoriales y motoras para niños de 2 a 8 años. Cada ficha te dice para qué sirve, qué necesitas y cómo se juega, con una versión más fácil y otra más difícil. Juego, no tarea. | 48 actividades con lo que ya tienes |
+| `kit-2-plan-4-semanas.png` | Padres: "no sé qué hacer con él en casa" | "¿Qué hago hoy con él?" Ya no tienes que pensarlo. El plan de 4 semanas te dice qué 3 fichas tocan cada día: una de movimiento, una de manos y una de calma. Además, con el registro semanal anotas qué le gusta y qué le cuesta, y lo llevas a su profesor o terapeuta. | Su plan de 4 semanas, ya armado |
+| `kit-3-que-incluye.png` | Qué incluye (6 áreas + 3 bonos) | 48 actividades en 6 áreas: motricidad fina, motricidad gruesa, exploración sensorial, calma y emociones, atención y planificación, y autonomía diaria. Incluye 3 bonos: registro semanal, plan de 4 semanas y kit de calma para la refri. Para mamás, papás, docentes y terapeutas. | Juega y Avanza: el kit completo |
+| `kit-4-kit-de-calma.png` | Momento de dolor: el berrinche | Cuando llega el berrinche, tener un plan a la vista te cambia la tarde. El kit trae 6 estrategias de calma con dibujos, para recortar y pegar en la refri: sopla la vela, abrazo de oso, modo tortuga, agua fría, empuja la pared y tararea. Incluido con las 48 actividades. | Un kit de calma para la refri |
 
-**Políticas de Meta (importante en este producto):**
-- No uses frases que afirmen una condición de la persona, como "¿Tu hijo tiene autismo?" o "Si tu hijo tiene TEA…". Meta las rechaza por "atributos personales". Habla del material ("actividades para niños con TEA") o del rol ("para mamás, papás y terapeutas").
-- No prometas resultados clínicos (como "mejora el lenguaje" o "reduce crisis"). Mantén el aviso "Material de apoyo, no reemplaza la terapia profesional".
+**Políticas de Meta y del propio kit:**
+- No escribas "¿Tu hijo tiene autismo / TEA / retraso?". Meta rechaza los anuncios que dicen o sugieren una condición de la persona.
+- No prometas resultados ("mejora el lenguaje", "se acaban los berrinches"). El kit se presenta como material de juego y estimulación, y lleva el aviso de que no reemplaza la terapia.
+- Si en los anuncios hay fotos de niños, ten en cuenta que el kit avisa que los objetos pequeños (menestras, botones) no son para menores de 3 años.
+
+## Producto 3 — Nuestro Gran Día (planner de boda)
+
+| Archivo | Ángulo | Texto principal (copy) | Título |
+|---|---|---|---|
+| `planner-1-abrumada.png` | Dolor: sentirse abrumada (adaptación del gancho de Bliss & Bone) | Si estás organizando tu matrimonio y tienes notas en 4 chats, no sabes qué papeles pide la muni y ya perdiste la cuenta de lo que llevas gastado… para un momento. Nuestro Gran Día junta todo tu matrimonio en un solo lugar 💍 | Organiza tu matrimonio sin estrés |
+| `planner-2-hecho-para-peru.png` | Diferencial: hecho para casarse en Perú | No es una plantilla gringa traducida 🇵🇪 Trae los trámites del civil (municipalidad) y del religioso (parroquia), el presupuesto en soles con adelantos y saldos, la hora loca, los padrinos y las canciones clave, y un cronograma del día para darle a cada proveedor. | Un planner para casarse en Perú |
+| `planner-3-checklist.png` | Demostración: checklist mes a mes | ¿No sabes por dónde empezar? El checklist te dice qué hacer en cada etapa, desde 12 meses antes, y cierra con la recta final: 1 mes, 1 semana y 1 día antes. Hasta trae el kit de emergencia del día. Marca, avanza y deja de preguntarte "¿me estoy olvidando de algo?". | Qué hacer cada mes hasta tu boda |
+| `planner-4-presupuesto.png` | Miedo a gastar de más | ¿Cuánto de tu presupuesto debería ir al catering? ¿Y a la foto? El planner trae el % guía de cada rubro para repartir tu presupuesto en soles sin adivinar, con columnas para el costo real, el adelanto, el saldo y la fecha de pago, y un 6 % reservado para imprevistos. | Reparte tu presupuesto sin adivinar |
+
+Nota: el planner es un PDF imprimible. Por eso ningún anuncio dice que "calcula solo" ni que funciona en Google Sheets.
 
 ---
 
 ## Cómo montar el test
 
 - **Estructura:** 1 campaña por producto con objetivo de mensajes y destino WhatsApp. 1 conjunto de anuncios con los 4 anuncios dentro, para que Meta reparta el presupuesto entre los ángulos.
-- **Público caliente:** personas que interactuaron con la página de FB o IG (365 días), que vieron el 50 % de tus videos, que te escribieron por WhatsApp o Messenger y que visitaron la web. Si al principio el público caliente tiene menos de ~1 000 personas, súmale un público frío amplio, o primero calienta con videos de alcance barato.
+- **Público caliente:** personas que interactuaron con la página de FB o IG (365 días), que vieron el 50 % de tus videos, que te escribieron por WhatsApp o Messenger y que visitaron la web. Si el público tiene menos de ~1 000 personas, súmale un público frío amplio de Perú.
 - **Presupuesto:** S/ 20–30 diarios por producto durante 4–5 días antes de decidir.
-- **Métrica de decisión:** costo por conversación iniciada y, sobre todo, **costo por venta** (anota cada venta del WhatsApp). Apaga el ángulo con el costo más alto después de unas 3 000 impresiones y duplica el que gane.
-- **Mensaje prellenado de WhatsApp:** usa uno distinto por anuncio (por ejemplo "Hola, quiero el caso – M2") para saber qué ángulo trajo cada venta.
+- **Métrica de decisión:** costo por venta (anota cada venta del WhatsApp), no solo costo por mensaje. Apaga el ángulo más caro después de unas 3 000 impresiones y duplica el ganador.
+- **Mensaje prellenado de WhatsApp:** uno distinto por anuncio (por ejemplo "Hola, quiero el Expediente Barranco – J2") para saber qué ángulo trajo cada venta.
